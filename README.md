@@ -1,5 +1,6 @@
 # MiTraq – My Intentional Tracking and Quantification
 
+## Aout Mitraq
 The Mitraq application is a habit tracker built with a five-predefined habits
 and users have the ability to design or customize a suitable habit. The customisation
 access in the application allows a user to design a habit to build or break. The idea
