@@ -1,7 +1,12 @@
 # MiTraq – My Intentional Tracking and Quantification
 
-MiTraq is a simple, command-line habit tracker built in Python. It helps users build or break habits by tracking their progress daily or weekly. MiTraq is lightweight, offline, and intuitive.
-
+The Mitraq application is a habit tracker built with a five-predefined habits
+and users have the ability to design or customize a suitable habit. The customisation
+access in the application allows a user to design a habit to build or break. The idea
+is for the user to intentionally login into the application to track progress (either 
+building or breaking habits). 
+Note: All users are given a unique code during registration which shall be used for 
+logins. 
 ---
 
 ## Features
@@ -14,7 +19,7 @@ MiTraq is a simple, command-line habit tracker built in Python. It helps users b
 
 ---
 
-## 🛠 Installation
+## Installation
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/mitraq-habit-tracker.git
@@ -31,7 +36,5 @@ python main.py
 ## Running Tests
 Make sure you have Python 3.10+ installed, then run:
 ```bash
-python -m unittest discover tests
+pytest 
 ```
-
----
