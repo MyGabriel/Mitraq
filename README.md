@@ -24,8 +24,7 @@ logins.
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mitraq-habit-tracker.git
-cd mitraq-habit-tracker
+git clone https://github.com/MyGabriel/Mitraq.git
 ```
 
 2. Run the app:
