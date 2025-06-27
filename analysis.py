@@ -9,6 +9,8 @@ def tracking(user):
     print(f"\n{"_"*10}| {user.name.upper()}'S MITRAQ |{"_"*10}\nMITRAQ TRACKING\n"
           f"1. In Progress\n2. Completed\n3. Analysis")
     option = input("Choose: ")
+
+    """Option 1 allows user to track habit for 30-times with yes or no"""
     if option == '1':
         print(f"\n{"_" * 10}| {user.name.upper()}'S MITRAQ |{"_" * 10}")
         for h in user.habits:
@@ -18,21 +20,24 @@ def tracking(user):
                 if h.records[i] is None:
                     """Receiving a mark for habits completion; yes (y) or no (n)."""
                     complete = input(f"Mark {h.name} ({h.frequency}) Day {i+1} complete? (y/n): ").lower()
-                    """Assigning a mark to the spaces in 'records' variable"""
+                    """Updating user's data and saving it if 'y' or 'n' is chosen"""
                     h.records[i] = (complete == 'y')
                     mitraqdb.save_habit(user.user_id, h)
                     break
 
+        """Option 2 reveals user's finished/marked task: '✔'=success, '✘'=failed, and '_'=incompleted"""
     elif option == '2':
         print(f"\n{"_" * 10}| {user.name.upper()}'S MITRAQ |{"_" * 10}"
               f"\nBelow is your progress, {user.name}")
-        """Iterating 'habits' data to display weather 'user' marked 'y' (✔), 'n' (✘)
-           or has not responded (_), if the 'user' chooses option 2."""
+        """Iterating 'habits' data to assign 'y'='✔', 'n'='✘', and incomplete='_' in response
+        to operations in option 1."""
         for h in user.habits:
             record_display = [
                 '✔' if r else '✘' if r is False else '_' for r in h.records
             ]
             print(f"{h.name.upper()} → {' '.join(record_display)}")
+
+        """"""
     elif option == '3':
         print(f"\n{"_" * 10}| {user.name.upper()}'S MITRAQ |{"_" * 10}\nANALYSIS")
         """This code block iterate 'habits' data for analysis; revealing the 'longest'
