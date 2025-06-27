@@ -68,13 +68,12 @@ def save_habit(user_id, habit):
 
 """This function, 'load_habits()', connects and loads users habits history using user_id."""
 def load_habits(user_id):
-    """Fetching habits data with user_id from the 'habits' table"""
+    # Fetching habits data with user_id from the 'habits' table
     c.execute("SELECT * FROM habits WHERE user_id=?", (user_id,))
     rows = c.fetchall()
     habits = []
     for row in rows:
-        """Linking the 'Habit' class (particularly, 'records' variable) to append stored
-        data."""
+        # Linking the 'Habit' class (particularly, 'records' variable) to append stored data.
         h = Habit(row[1], row[2], row[3], row[4])
         h.records = [True if r == '1' else False if r == '0' else None for r in row[5].split(',')]
         habits.append(h)
@@ -124,7 +123,7 @@ def delete_habit(user_id):
 """This class, 'User', assigns user's information (from registration and habits dictionary)
    to variables including name, age, country, user_id, and habits."""
 class User:
-    """An '__init__' function for variables names for the class 'Habits'."""
+    #An '__init__' function for variables names for the class 'Habits'.
     def __init__(self, name, age, country, user_id):
         self.name = name
         self.age = age
@@ -132,7 +131,7 @@ class User:
         self.user_id = user_id
         self.habits = []
 
-    """This function appends the variable 'habits' in the __init__ function"""
+    # This function appends the variable 'habits' in the __init__ function
     def add_habit(self, habit):
         self.habits.append(habit)
 
@@ -143,24 +142,24 @@ class User:
 """This class, 'Habits', records habits data including habit's name, frequency,
    start_date, start_time."""
 class Habit:
-    """An '__init__' function for variables names for the class 'Habits'."""
+    #An '__init__' function for variables names for the class 'Habits'.
     def __init__(self, name, frequency, start_date, start_time):
         self.name = name
         self.frequency = frequency
         self.start_date = start_date
         self.start_time = start_time
-        """This variable, 'records', provide a space to mark habit 30-times."""
+        #This variable, 'records', provide a space to mark habit 30-times.
         self.records = [None] * 30
 
     """A function to assist marking 'yse' if a habits are completed."""
     def mark_complete(self, index):
-        """Accessing the marking space."""
+        #Accessing the marking space.
         if 0 <= index < len(self.records):
             self.records[index] = True
 
     """A function to assist marking 'no' if a habits are completed."""
     def mark_incomplete(self, index):
-        """Accessing the marking space."""
+        #Accessing the marking space.
         if 0 <= index < len(self.records):
             self.records[index] = False
 
@@ -169,7 +168,7 @@ class Habit:
        'tracking()' function"""
     def get_streaks(self):
         longest = shortest = current = 0
-        """Iterating 'records' variable to determine longest and shortest streaks."""
+        #Iterating 'records' variable to determine longest and shortest streaks.
         for day in self.records:
             if day:
                 current += 1

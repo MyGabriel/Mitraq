@@ -1,5 +1,7 @@
 # MiTraq
 
+
+---
 ## About Mitraq
 The Mitraq application is a habit tracker built with a five-predefined habits
 and users have the ability to design or customize a suitable habit. The customisation
@@ -20,6 +22,11 @@ logins.
 - Analytics: longest and shortest streaks
 
 ---
+
+## Mitraq's Flowchart
+Use the link below to access how Mitraq components flow.
+https://github.com/MyGabriel/Mitraq/blob/main/Mitraq%20FlowChart.png?raw=true
+
 
 ## Installation
 1. Clone the repository:

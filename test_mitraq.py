@@ -5,7 +5,7 @@ from mitraq_classes import dashboard
 from mitraqdb import save_habit, Habit, User
 
 # Manually define the user (skip login/registration)
-user = User("Gabriel", 99, "Japan", "TYU6IP")
+user = User("Gabriel", 99, "Ghana", "TYU6IP")
 
 # Define 14-day tracking records (True = ✔, False = ✘, None = _)
 records_quit = [True, False, True, True, False, None, True, True, False, True, True, True, False, None]
