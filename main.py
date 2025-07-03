@@ -6,11 +6,12 @@ import mitraqdb
 from mitraqdb import User
 import analysis
 
-"""This function, 'main()', initiates the Mitraq program. It invokes 'dashboard()',
-'register()', and 'login()' functions."""
+# This function, 'main()', initiates the Mitraq program. It invokes 'dashboard()',
+# 'register()', and 'login()' functions.
 def main():
-    """print(f"\n{"_"*10}| WELCOME TO MITRAQ |{"_"*10}")"""
+
     while True:
+        # Printing Mitraq's welcome message
         print(f"\n{"_"*10}| WELCOME TO MITRAQ |{"_"*10}\n1. Register\n2. Login\n3. Quit")
         choice = input("Choose option: ")
         if choice == '1':
@@ -23,7 +24,7 @@ def main():
             print("\nThank you for using Mitraq, see you again.")
             break
 
-"""Controlling code execution with the '__name__' variable."""
+# Controlling code execution with the '__name__' variable.
 if __name__ == "__main__":
     """Invoking the 'main' function above."""
     main()
