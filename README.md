@@ -24,11 +24,6 @@ Note: Each user has a unique code given during registration: Used for logins.
 
 ---
 
-## Mitraq's Flowchart
-Use the link below to access how components Mitraq flow.
-https://github.com/MyGabriel/Mitraq/blob/main/Mitraq%20FlowChart.png?raw=true
-
-
 ## Installation
 1. Clone the repository:
 ```bash
