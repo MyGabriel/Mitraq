@@ -15,12 +15,12 @@ Note: Each user has a unique code given during registration: Used for logins.
 ---
 
 ## Features
-- Secure user registration with unique ID
-- Habit creation (default or custom)
-- Daily and weekly tracking
-- Visual tracking summary (✔ = complete, ✘ = missed, _ = unmarked)
-- Habit deletion
-- Analytics: longest and shortest streaks
+- Secure user registration with unique ID.
+- Habit creation (default or custom).
+- Daily and weekly tracking.
+- Visual tracking summary (✔ = complete, ✘ = missed, _ = unmarked).
+- Habit deletion.
+- Analytics: longest and shortest streaks.
 
 ---
 
