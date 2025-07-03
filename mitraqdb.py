@@ -5,14 +5,14 @@ import sqlite3
 import secrets
 import string
 
-# Connecting mitraq.db to sqlite3 for data storage and processing
-conn = sqlite3.connect('mitraqdata.db')
+# Creating mitraqlite.db in sqlite3 for data storage and processing
+conn = sqlite3.connect('mitraqlite.db')
 c = conn.cursor()
 
-#The next 3 code blocks build 2 tables in sqlite3.
-#   Note: The first table, 'users', stores user's information (name, age, country, and user_id).
-#   The second table, habits, stores history including date and time,
-#   and the third commits data in the tables.
+# The next 3 code blocks build 2 tables in sqlite3.
+# Note: The first table, 'users', stores user's information (name, age, country, and user_id).
+# The second table, habits, stores history including date and time,
+# and the third commits data in the tables.
 
 c.execute("""CREATE TABLE IF NOT EXISTS users (
     name TEXT, age INTEGER, country TEXT, user_id TEXT PRIMARY KEY)""")
