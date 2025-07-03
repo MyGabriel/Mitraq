@@ -7,7 +7,7 @@ from mitraqdb import User, Habit
 """This function, 'tracking()', assist users to monitor and analyse 'user' data"""
 def tracking(user):
     print(f"\n{"_"*10}| {user.name.upper()}'S MITRAQ |{"_"*10}\nMITRAQ TRACKING\n"
-          f"1. In Progress\n2. Completed\n3. Analysis")
+          f"1. In-Progress\n2. Completed\n3. Analysis")
     option = input("Choose: ")
 
     """Option 1 allows user to track habit for 30-times with yes or no"""

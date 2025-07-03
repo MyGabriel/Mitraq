@@ -7,9 +7,9 @@ from mitraqdb import save_habit, Habit, User
 # Manually define the user (skip login/registration)
 user = User("Gabriel", 99, "Ghana", "TYU6IP")
 
-# Define 14-day tracking records (True = ✔, False = ✘, None = _)
-records_quit = [True, False, True, True, False, None, True, True, False, True, True, True, False, None]
-records_meditate = [True, None, False, None, True, None, None, False, True, True, None, None, True, None]
+# Define 14-day tracking records (True = ✔, False = ✘)
+records_quit = [True, False, True, True, False, True, True, True, False, True, True, True, False, True]
+records_meditate = [True, True, False, True, True, True, False, False, True, True, True, True, True, False]
 
 # Create two habits and assign records
 habit1 = Habit("Quit Smoking", "daily", "2025-06-01", "06:00")
