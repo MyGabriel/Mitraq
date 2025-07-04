@@ -4,7 +4,7 @@
 ---
 ## About Mitraq
 Mitraq is a habit tracker built with Python’s object-oriented and functional programming concepts. 
-It is text-base (CLI) and lightweight (without graphics). Can be used without internet.
+It is text-based (CLI) and lightweight (without graphics). Can be used without internet.
 Mitraq uses SQLite3 for data operations.
 
 The Mitraq is built with a five-predefined habits and users have the ability to design or customize
